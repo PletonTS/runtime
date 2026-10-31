@@ -6,8 +6,15 @@
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {},
+  "bin": {
+    "pleton": "bin/pleton.mjs"
+  },
+  "dependencies": {
+    "@pleton/builder": "workspace:*",
+    "tsx": "^4.23.15"
+  },
   "devDependencies": {
+    "@types/node": "^26.6.6",
     "typescript": "^6.0.3"
   },
   "private": true
